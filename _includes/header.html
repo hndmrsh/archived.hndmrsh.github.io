@@ -1,22 +1,16 @@
 <!-- Uses a transparent header that draws on top of the layout's background -->
-<style>
-.demo-layout-transparent {
-  background: url('../static/bg.jpg') center / cover;
-}
-.demo-layout-transparent .mdl-layout__header,
-.demo-layout-transparent .mdl-layout__drawer-button {
-  /* This background is dark, so we set text to white. Use 87% black instead if
-     your background is light. */
-  color: rgba(0,0,0,.87);
-}
-</style>
-
-<header class="mdl-layout__header mdl-layout__header--transparent">
+<header class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
   <div class="mdl-layout__header-row">
+    {% unless page.categories contains 'blog' %}
+      <span class="mdl-layout-title">{{ page.title }}</span>
+    {% endunless %}
+
     <!-- Add spacer, to align navigation to the right -->
     <div class="mdl-layout-spacer"></div>
+    
+    <!-- Search box -->
     <form action="#">
-      <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
+      <div class="hndmrsh__search mdl-textfield mdl-js-textfield mdl-textfield--expandable">
         <label class="mdl-button mdl-js-button mdl-button--icon" for="sample6">
           <i class="material-icons">search</i>
         </label>
@@ -26,16 +20,45 @@
         </div>
       </div>
     </form>
+
 </header>
-<div class="mdl-layout__drawer">
-  <nav class="mdl-navigation">
-    <a class="mdl-navigation__link" href="{{ "/" | prepend: site.baseurl }}"><i class="material-icons" role="presentation">home</i>Home</a>
-    {% for page in site.pages %}
-      {% if page.title %}
-        <a class="mdl-navigation__link" href="{{ page.url | prepend: site.baseurl }}"><i class="material-icons" role="presentation">{{ page.icon }}</i>{{ page.title }}</a>
-      {% endif %}
-    {% endfor %}
-  </nav>
-</div>
-<div class="mdl-layout-spacer"></div>
+
+<!-- This section determines whether to show an appropriate back button, or the navigation drawer. Note that we check for the blog category first, as this is  -->
+{% if page.categories contains 'blog' %}
+  <div class="hndmrsh-back">
+    <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" href="/blog/" title="go back" role="button">
+      <i class="material-icons" role="presentation">arrow_back</i>
+    </a>
+  </div>
+{% elsif page.categories contains 'games' %}
+  <div class="hndmrsh-back">
+    <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" href="/games/" title="go back" role="button">
+      <i class="material-icons" role="presentation">arrow_back</i>
+    </a>
+  </div>
+{% elsif page.categories contains 'apps' %}
+  <div class="hndmrsh-back">
+    <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" href="/apps/" title="go back" role="button">
+      <i class="material-icons" role="presentation">arrow_back</i>
+    </a>
+  </div>
+{% elsif page.categories contains 'music' %}
+  <div class="hndmrsh-back">
+    <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" href="/music/" title="go back" role="button">
+      <i class="material-icons" role="presentation">arrow_back</i>
+    </a>
+  </div>
+{% else %}
+  <!-- Construct a navigation drawer -->
+  <div class="mdl-layout__drawer">
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href="{{ "/" | prepend: site.baseurl }}"><i class="material-icons" role="presentation">home</i>Home</a>
+      {% for page in site.pages %}
+        {% if page.title %}
+          <a class="mdl-navigation__link" href="{{ page.url | prepend: site.baseurl }}"><i class="material-icons" role="presentation">{{ page.icon }}</i>{{ page.title }}</a>
+        {% endif %}
+      {% endfor %}
+    </nav>
+  </div>
+{% endif %}
 
