@@ -24,3 +24,4 @@ collections:
 
 # Build settings
 markdown: kramdown
+exclude: [working_files/]
