@@ -3,7 +3,15 @@ layout: default
 ---
 <div class="hndmrsh__grid mdl-grid">
   {% for game in site.games %}
-  	<div class="mdl-cell mdl-cell--4-col">
+  	<div class="mdl-cell mdl-cell--6-col">
+      <div class=".hndmrsh__game-thumb mdl-card mdl-shadow--2dp">
+        <div class="mdl-card__title mdl-card--expand"></div>
+        <div class="mdl-card__actions">
+          <span class="hndmrsh__game-thumb-title">{{ game.title }}</span>
+        </div>
+      </div>
+  	</div>
+  	 <div class="mdl-cell mdl-cell--6-col">
       <div class=".hndmrsh__game-thumb mdl-card mdl-shadow--2dp">
         <div class="mdl-card__title mdl-card--expand"></div>
         <div class="mdl-card__actions">
