@@ -1,14 +1,12 @@
 <!-- Uses a transparent header that draws on top of the layout's background -->
-<header class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-  <div class="mdl-layout__header-row">
-    {% unless page.categories contains 'blog' %}
-      <span class="mdl-layout-title">{{ page.title }}</span>
-    {% endunless %}
+<header class="hndmrsh-layout-waterfall mdl-layout__header">
+  <!-- Top row, always visible -->
+  <div class="hndmrsh-title-header mdl-layout__header-row">
+    <!-- Title -->
+    <div class="hndmrsh-title" >
+      <span class="mdl-layout-title">hndmrsh</span>
+    </div>
 
-    <!-- Add spacer, to align navigation to the right -->
-    <div class="mdl-layout-spacer"></div>
-    
-    <!-- Search box -->
     <form action="#">
       <div class="hndmrsh__search mdl-textfield mdl-js-textfield mdl-textfield--expandable">
         <label class="mdl-button mdl-js-button mdl-button--icon" for="sample6">
@@ -20,45 +18,21 @@
         </div>
       </div>
     </form>
+  </div>
 
-</header>
-
-<!-- This section determines whether to show an appropriate back button, or the navigation drawer. Note that we check for the blog category first, as this is  -->
-{% if page.categories contains 'blog' %}
-  <div class="hndmrsh-back">
-    <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" href="/blog/" title="go back" role="button">
-      <i class="material-icons" role="presentation">arrow_back</i>
-    </a>
-  </div>
-{% elsif page.categories contains 'games' %}
-  <div class="hndmrsh-back">
-    <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" href="/games/" title="go back" role="button">
-      <i class="material-icons" role="presentation">arrow_back</i>
-    </a>
-  </div>
-{% elsif page.categories contains 'apps' %}
-  <div class="hndmrsh-back">
-    <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" href="/apps/" title="go back" role="button">
-      <i class="material-icons" role="presentation">arrow_back</i>
-    </a>
-  </div>
-{% elsif page.categories contains 'music' %}
-  <div class="hndmrsh-back">
-    <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" href="/music/" title="go back" role="button">
-      <i class="material-icons" role="presentation">arrow_back</i>
-    </a>
-  </div>
-{% else %}
-  <!-- Construct a navigation drawer -->
-  <div class="mdl-layout__drawer">
-    <nav class="mdl-navigation">
-      <a class="mdl-navigation__link" href="{{ "/" | prepend: site.baseurl }}"><i class="material-icons" role="presentation">home</i>Home</a>
+  <!-- Bottom row, not visible on scroll -->
+  <div class="hndmrsh-navigation-layout mdl-layout__header-row">
+    <!-- Navigation -->
+    <nav class="hndmrsh-navigation mdl-navigation">
+    <!-- Tabs -->
+      <!-- TODO if current page, add class "active" -->
+      <a class="hndmrsh-nav-link mdl-navigation__link" href="/">About</a>
       {% for page in site.pages %}
         {% if page.title %}
-          <a class="mdl-navigation__link" href="{{ page.url | prepend: site.baseurl }}"><i class="material-icons" role="presentation">{{ page.icon }}</i>{{ page.title }}</a>
+          <a class="hndmrsh-nav-link mdl-navigation__link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
         {% endif %}
       {% endfor %}
+      
     </nav>
   </div>
-{% endif %}
-
+</header>

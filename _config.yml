@@ -14,9 +14,6 @@ url: "http://hndmrsh.github.io" # the base hostname & protocol for your site
 twitter_username: hndmrsh
 github_username:  hndmrsh
 
-colour_primary: grey
-colour_accent: amber
-
 collections:
   games:
     output: true

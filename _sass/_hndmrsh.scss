@@ -1,0 +1,140 @@
+$heading-font-family: 'Playball', cursive;
+
+
+.mdl-grid {
+  display: flex !important;
+}
+
+body .hndmrsh {
+	font-family: "Roboto", "Helvetica", sans-serif;
+  background-color: #f0f0f0;
+}
+
+.hndmrsh.mdl-layout {
+  align-items: center;
+}
+
+.mdl-layout__header-row .mdl-navigation__link.hndmrsh-nav-link {
+  opacity: 0.65;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 500;
+  border-bottom: 3px solid transparent;
+  padding: 0px 24px;
+  min-width: 80px;
+  line-height: 48px;
+}
+
+a.hndmrsh-nav-link.mdl-navigation__link:hover {
+  opacity: 1;
+  text-decoration: none;
+}
+
+
+.mdl-layout__header-row .mdl-navigation__link.hndmrsh-nav-link.active {
+  opacity: 1;
+  border-bottom-color: #18ffff
+}
+
+.mdl-layout__header-row.hndmrsh-navigation-layout {
+  height: 48px;
+}
+
+
+
+.mdl-layout__header-row .mdl-navigation.hndmrsh-navigation {
+  height: 48px;
+  text-align: center;
+}
+
+.hndmrsh-title-header {
+  text-align: center;
+  justify-content: center;
+  min-height: 112px;
+  height: 112px;
+}
+
+.hndmrsh-title {
+  text-align: center;
+  width: 100%;
+}
+
+.hndmrsh-title .mdl-layout-title {
+  font-family: $heading-font-family;
+  font-size: 72px;
+}
+
+.hndmrsh .mdl-layout__header,
+.hndmrsh .mdl-layout__drawer-button,
+.hndmrsh .mdl-layout__button {
+  color: white;
+}
+
+.hndmrsh .hndmrsh__search {
+  z-index: 4;
+}
+
+.hndmrsh .hndmrsh__grid {
+  max-width: 1080px;
+}
+
+.hndmrsh .hndmrsh__post {
+  max-width: 900px;
+  padding: 0;
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  flex-shrink: 0;
+}
+
+.hndmrsh__post .mdl-card__title {
+  color: #fff;
+  height: 176px;
+}
+
+.hndmrsh__game-thumb.mdl-card {
+  width: 256px;
+  height: 256px;
+  background: url('/static/image_card.jpg') center / cover;
+}
+
+.hndmrsh__game-thumb > .mdl-card__actions {
+  height: 52px;
+  padding: 16px;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.hndmrsh__game-thumb-title {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.hndmrsh .hndmrsh-back {
+  top: 12px;
+  left: 12px;
+  position: absolute;
+  text-align: center;
+  z-index: 4;
+}
+
+.hndmrsh .mdl-layout__content {
+  padding-top: 130px;
+  width: 80%;
+}
+
+.hndmrsh-under-construction {
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  .hndmrsh-under-construction h2 {
+    font-size: 16pt;
+    text-align: center;
+  }

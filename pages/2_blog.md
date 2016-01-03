@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: under_construction
 title: Blog
 permalink: /blog/
 icon: pages

@@ -10,8 +10,10 @@
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
 
-  <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.{{ site.colour_primary }}-{{ site.colour_accent }}.min.css">
+  <link rel="stylesheet" href="{{ "/css/material-darkgrey-pink.css" | prepend: site.baseurl }}">
   <script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
+
+  <link href='https://fonts.googleapis.com/css?family=Playball|Roboto:300,500' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
   {% if page.background %}

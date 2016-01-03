@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: under_construction
 title: Music
 permalink: /music/
 icon: music_note
