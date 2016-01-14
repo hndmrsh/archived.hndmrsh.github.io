@@ -1,7 +1,8 @@
 ---
 layout: 		post
-title:  		"Game 1"
-date:   		2015-11-09 22:31:53 +1300
-release_date: 	2015-11-09 22:31:53 +1300
+title:  		"Blast Off"
+thumb:			"bo.png"
+release_date: 	2015-04-17 09:00:00 +1300
+platforms:		android
 ---
 Example of game post.

@@ -1,7 +1,8 @@
 ---
 layout: 		post
-title:  		"Game 1"
-date:   		2015-11-09 22:31:53 +1300
-release_date: 	2015-11-09 22:31:53 +1300
+title:  		"Stoppage Time"
+thumb:			"st.png"
+release_date: 	2014-08-29 22:31:53 +1300
+platforms:		windows
 ---
 Example of game post.

@@ -1,0 +1,31 @@
+---
+# blog.html
+# This file defines the layout for the Blog page. Each card
+# links to its own page, of the blog_post.html layout.
+
+layout: default
+---
+<div class="hndmrsh__grid mdl-grid">
+  {% for post in site.posts %}
+    <style type="text/css">
+      .{{ post.title | slugify }}.hndmrsh-card > .mdl-card__title {
+      {% if post.background %}
+        background: url('/static/blog-headers/{{ post.background }}');
+      {% else %}
+        background: {{ post.colour }};
+      {% endif %}
+      }
+    </style>
+  	<div class="{{ post.title | slugify }} hndmrsh-card mdl-cell {% if post.size == "l" %} mdl-cell--8-col {% else %} mdl-cell--4-col {% endif %} mdl-cell--12-col-tablet mdl-card mdl-shadow--2dp">
+      <div class="mdl-card__title mdl-card--expand">
+        <h2 class="mdl-card__title-text">{{ post.title }}</h2>
+      </div>
+      <div class="mdl-card__supporting-text">
+        {{ post.excerpt }}
+      </div>
+      <div class="mdl-card--border mdl-card__supporting-text">
+        {{ post.date || timeago }}
+      </div>
+  	</div>
+  {% endfor %}
+</div>

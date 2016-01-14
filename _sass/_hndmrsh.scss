@@ -75,7 +75,7 @@ a.hndmrsh-nav-link.mdl-navigation__link:hover {
 }
 
 .hndmrsh .hndmrsh__grid {
-  max-width: 1080px;
+  max-width: 840px;
 }
 
 .hndmrsh .hndmrsh__post {
@@ -92,35 +92,24 @@ a.hndmrsh-nav-link.mdl-navigation__link:hover {
   height: 176px;
 }
 
-.hndmrsh__game-thumb.mdl-card {
-  width: 256px;
-  height: 256px;
-  background: url('/static/image_card.jpg') center / cover;
+.hndmrsh-card.mdl-card {
+  height: 296px;
 }
 
-.hndmrsh__game-thumb > .mdl-card__actions {
-  height: 52px;
-  padding: 16px;
-  background: rgba(0, 0, 0, 0.2);
-}
-
-.hndmrsh__game-thumb-title {
+.hndmrsh-card > .mdl-card__title {
   color: #fff;
-  font-size: 14px;
-  font-weight: 500;
-}
-
-.hndmrsh .hndmrsh-back {
-  top: 12px;
-  left: 12px;
-  position: absolute;
-  text-align: center;
-  z-index: 4;
+  background-position: bottom right;
+  background-repeat: no-repeat;
 }
 
 .hndmrsh .mdl-layout__content {
   padding-top: 130px;
   width: 80%;
+}
+
+i.hndmrsh-icons:before {
+  margin-left: 0px;
+  margin-right: 8px;
 }
 
 .hndmrsh-under-construction {

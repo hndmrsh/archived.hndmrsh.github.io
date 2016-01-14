@@ -1,0 +1,60 @@
+@font-face {
+	font-family: "Flaticon";
+	src: url("flaticon.eot");
+	src: url("flaticon.eot#iefix") format("embedded-opentype"),
+	url("flaticon.woff") format("woff"),
+	url("flaticon.ttf") format("truetype"),
+	url("flaticon.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+	font-family: Flaticon;
+        font-size: 20px;
+font-style: normal;
+margin-left: 20px;
+}.flaticon-cat6:before {
+	/*GitHub*/
+	content: "\e000";
+}
+.flaticon-earth213:before {
+	/*Web*/
+	content: "\e001";
+}
+.flaticon-email5:before {
+	/*Email*/
+	content: "\e002";
+}
+.flaticon-iphone26:before {
+	/*iPhone*/
+	content: "\e003";
+}
+.flaticon-linkedin12:before {
+	/*LinkedIn*/
+	content: "\e004";
+}
+.flaticon-logo27:before {
+	/*Linux*/
+	content: "\e005";
+}
+.flaticon-mac7:before {
+	/*OS X*/
+	content: "\e006";
+}
+.flaticon-online36:before {
+	/*SoundCloud*/
+	content: "\e007";
+}
+.flaticon-system1:before {
+	/*Android*/
+	content: "\e008";
+}
+.flaticon-twitter1:before {
+	/*Twitter*/
+	content: "\e009";
+}
+.flaticon-windows7:before {
+	/*Windows*/
+	content: "\e00a";
+}
