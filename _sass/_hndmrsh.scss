@@ -30,6 +30,9 @@ a.hndmrsh-nav-link.mdl-navigation__link:hover {
   text-decoration: none;
 }
 
+a.hndmrsh-card:hover {
+  text-decoration: none;
+}
 
 .mdl-layout__header-row .mdl-navigation__link.hndmrsh-nav-link.active {
   opacity: 1;
@@ -39,8 +42,6 @@ a.hndmrsh-nav-link.mdl-navigation__link:hover {
 .mdl-layout__header-row.hndmrsh-navigation-layout {
   height: 48px;
 }
-
-
 
 .mdl-layout__header-row .mdl-navigation.hndmrsh-navigation {
   height: 48px;
@@ -89,7 +90,7 @@ a.hndmrsh-nav-link.mdl-navigation__link:hover {
 
 .hndmrsh__post .mdl-card__title {
   color: #fff;
-  height: 176px;
+  height: 256px;
 }
 
 .hndmrsh-card.mdl-card {
@@ -104,6 +105,7 @@ a.hndmrsh-nav-link.mdl-navigation__link:hover {
 
 .hndmrsh .mdl-layout__content {
   padding-top: 130px;
+  padding-bottom: 64px;
   width: 80%;
 }
 
@@ -113,17 +115,50 @@ i.hndmrsh-icons:before {
 }
 
 .hndmrsh-under-construction {
-    width: 300px;
-    height: 200px;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-  }
+  width: 300px;
+  height: 200px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
 
-  .hndmrsh-under-construction h2 {
-    font-size: 16pt;
-    text-align: center;
-  }
+.hndmrsh-under-construction h2 {
+  font-size: 16pt;
+  text-align: center;
+}
+
+.hndmrsh-back-button.mdl-button {
+  position: absolute;
+}
+
+.hndmrsh-share-button.mdl-button {
+  float: right;
+  position: absolute;
+  right: 32px;
+}
+
+.hndmrsh-post-meta.post-meta {
+  width: 97%;
+  vertical-align: middle;
+  padding: 24px 32px;
+}
+
+.hndmrsh-post-meta-left {
+  position: relative;
+  float: left;
+}
+
+.hndmrsh-post-content.post-content {
+  width: 70%;
+}
+
+article .hndmrsh-post-content {
+  margin: 32px auto;
+}
+
+.post-header {
+  margin-bottom: 0;
+}

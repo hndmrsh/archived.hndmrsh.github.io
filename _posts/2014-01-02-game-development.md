@@ -1,5 +1,5 @@
 ---
-layout:		post
+layout:		blogpost
 size:		s
 title: 		"Game development with Unity"
 excerpt:	|

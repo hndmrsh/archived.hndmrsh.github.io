@@ -1,11 +1,11 @@
 ---
-layout:		post
+layout:		blogpost
 size:		s
 title: 		"Thoughts on MVP in Android"
 excerpt:	|
   My experiences with developing apps for Android using an MVP architecture.
 colour:		"#EE2FC6"
-tags: 		android, development
+tags: 		android development
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non rhoncus lacus. Nulla facilisi. Integer orci tellus, posuere sit amet maximus et, egestas et magna. Nullam quis enim ac elit molestie vulputate non eu diam. Vivamus volutpat sem efficitur mauris finibus hendrerit. In ultrices arcu id ipsum imperdiet fringilla. Maecenas blandit lorem velit, sit amet feugiat purus fermentum eu. Nullam quis ex elementum, laoreet nisi vel, elementum arcu.

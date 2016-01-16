@@ -1,0 +1,55 @@
+---
+layout: default
+---
+
+<div class="mdl-grid">
+  <div class="hndmrsh__post mdl-card mdl-shadow--4dp mdl-cell mdl-cell--6-col">
+    <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+      <header class="post-header">
+        
+        <style type="text/css">
+          .hndmrsh__post .post__{{ page.id | slugify }} {
+          {% if page.background %}
+            background: url('/static/blog-headers/{{ page.background }}') center / cover;
+          {% else %}
+            background: {{ page.colour }};
+          {% endif %}
+        </style>
+        <div class="post__{{ page.id | slugify }} mdl-card__title ">
+          <a class="hndmrsh-back-button mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" href="/blog" title="Back" role="button">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+              <span class="mdl-ripple is-animating" style="width: 92.5097px; height: 92.5097px; transform: translate(-50%, -50%) translate(16px, 28px);">
+              </span>
+            </span>
+          </a>
+          <h2 class="post-title mdl-card__title-text" itemprop="name headline">{{ page.title }}</h2>
+        </div>
+        <div class="mdl-card__supporting-text post-meta hndmrsh-post-meta">
+          <span class="hndmrsh-post-meta-left">
+            <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | timeago }}</time>
+            {% if page.tags.size > 0 %}
+              <div>Filed under: {% assign first = true %}{% for tag in page.tags %}{% if first == false %}, {% endif %}<a href="/tags/{{ tag }}">{{ tag }}</a>{% assign first = false %}{% endfor %}</div>
+            {% endif %}
+            {% if page.crosspost %}
+              <div>Originally posted at: <a href="{{ page.crosspost.url }}">{{ page.crosspost.name }}</a></div>
+            {% endif %}
+            {% if page.seealso %}
+              <div>See also: <a href="{{ page.seealso.url }}">{{ page.seealso.name }}</a></div>
+            {% endif %}
+          </span>
+          <a class="hndmrsh-share-button mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" href="/share" title="Share" role="button">
+            <i class="material-icons" role="presentation">share</i>
+            <span class="mdl-button__ripple-container">
+              <span class="mdl-ripple is-animating" style="width: 92.5097px; height: 92.5097px; transform: translate(-50%, -50%) translate(16px, 28px);">
+              </span>
+            </span>
+          </a>
+        </div>
+      </header>
+      <div class="hndmrsh-post-content post-content mdl-color-text--grey-700" itemprop="articleBody">
+        {{ content }}
+      </div>
+    </article>
+  </div>
+</div>
