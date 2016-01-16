@@ -10,7 +10,10 @@ layout: default
     <style type="text/css">
       .{{ post.title | slugify }}.hndmrsh-card > .mdl-card__title {
       {% if post.background %}
-        background: url('/static/blog-headers/{{ post.background }}');
+        background: 
+          linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+          url('/static/blog-headers/{{ post.background }}')
+            center / cover;
       {% else %}
         background: {{ post.colour }};
       {% endif %}

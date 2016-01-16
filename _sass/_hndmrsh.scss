@@ -63,6 +63,7 @@ a.hndmrsh-card:hover {
 .hndmrsh-title .mdl-layout-title {
   font-family: $heading-font-family;
   font-size: 72px;
+  letter-spacing: 0;
 }
 
 .hndmrsh .mdl-layout__header,
@@ -128,6 +129,7 @@ i.hndmrsh-icons:before {
 .hndmrsh-under-construction h2 {
   font-size: 16pt;
   text-align: center;
+  font-weight: 400;
 }
 
 .hndmrsh-back-button.mdl-button {

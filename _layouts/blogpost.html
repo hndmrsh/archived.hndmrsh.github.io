@@ -10,7 +10,9 @@ layout: default
         <style type="text/css">
           .hndmrsh__post .post__{{ page.id | slugify }} {
           {% if page.background %}
-            background: url('/static/blog-headers/{{ page.background }}') center / cover;
+            background: 
+              linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+              url('/static/blog-headers/{{ page.background }}') center / cover;
           {% else %}
             background: {{ page.colour }};
           {% endif %}
