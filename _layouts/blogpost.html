@@ -31,7 +31,7 @@ layout: default
           <span class="hndmrsh-post-meta-left">
             <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | timeago }}</time>
             {% if page.tags.size > 0 %}
-              <div>Filed under: {% assign first = true %}{% for tag in page.tags %}{% if first == false %}, {% endif %}<a href="/tags/{{ tag }}">{{ tag }}</a>{% assign first = false %}{% endfor %}</div>
+              <div>Filed under: {% assign first = true %}{% for tag in page.tags %}{% if first == false %}, {% endif %}<a href="#">{{ tag }}</a>{% assign first = false %}{% endfor %}</div>
             {% endif %}
             {% if page.crosspost %}
               <div>Originally posted at: <a href="{{ page.crosspost.url }}">{{ page.crosspost.name }}</a></div>
@@ -40,7 +40,7 @@ layout: default
               <div>See also: <a href="{{ page.seealso.url }}">{{ page.seealso.name }}</a></div>
             {% endif %}
           </span>
-          <a class="hndmrsh-share-button mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" href="/share" title="Share" role="button">
+          <a class="hndmrsh-share-button mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" href="#" title="Share" role="button">
             <i class="material-icons" role="presentation">share</i>
             <span class="mdl-button__ripple-container">
               <span class="mdl-ripple is-animating" style="width: 92.5097px; height: 92.5097px; transform: translate(-50%, -50%) translate(16px, 28px);">
