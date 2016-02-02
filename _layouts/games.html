@@ -1,0 +1,52 @@
+---
+# games.html
+# This file defines the layout for the Games page. Each card
+# links to its own page, of the game_post.html layout.
+
+layout: default
+---
+<div class="hndmrsh__grid mdl-grid">
+  {% for game in site.games %}
+    {% if game.thumb %}
+    <style type="text/css">
+      .{{ game.title | slugify }}.hndmrsh-card > .mdl-card__title {
+          background: 
+            linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+            url('/static/game-thumbs/{{ game.thumb }}') center / cover;
+      }
+    </style>
+    {% endif %}
+  	<a href="{{ game.url }}" class="{{ game.title | slugify }} hndmrsh-card mdl-cell mdl-card mdl-shadow--2dp">
+      <div class="mdl-card__title mdl-card--expand">
+        <h2 class="mdl-card__title-text">{{ game.title }}</h2>
+      </div>
+      <div class="mdl-card__supporting-text">
+      {% if game.platforms %}
+          <!-- Platforms -->
+          {% if game.platforms contains "windows" %}
+            <i class="hndmrsh-icons flaticon-windows7" ></i>
+          {% endif %}
+          {% if game.platforms contains "osx" %}
+            <i class="hndmrsh-icons flaticon-mac7" ></i>
+          {% endif %}
+          {% if game.platforms contains "linux" %}
+            <i class="hndmrsh-icons flaticon-logo27" ></i>
+          {% endif %}
+          {% if game.platforms contains "android" %}
+            <i class="hndmrsh-icons flaticon-system1" ></i>
+          {% endif %}
+          {% if game.platforms contains "iphone" %}
+            <i class="hndmrsh-icons flaticon-iphone26" ></i>
+          {% endif %}
+          {% if game.platforms contains "web" %}
+            <i class="hndmrsh-icons flaticon-earth213" ></i>
+          {% endif %}
+      {% endif %}
+      {% if game.release_date %}
+        <br/>Released {{ game.release_date | date: "%d %B %Y"}}
+      {% endif %}
+      </div>
+  	</a>
+  {% endfor %}
+
+</div>

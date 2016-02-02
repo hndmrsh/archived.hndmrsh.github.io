@@ -1,0 +1,29 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>{{ site.title | downcase }}{% if page.title %} :: {{ page.title | downcase }}{% else %}{% endif %}</title>
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+
+  <link rel="stylesheet" href="{{ "/css/material-darkgrey-pink.css" | prepend: site.baseurl }}">
+  <script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
+
+  <link href='https://fonts.googleapis.com/css?family=Playball|Roboto:400,500' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <link rel="stylesheet" type="text/css" href="{{ "/css/flaticon/flaticon.css" | prepend: site.baseurl }}"> 
+
+  {% if page.background %}
+    <style>
+      body .hndmrsh {
+        background: url('/static/{{ page.background }}.jpg') center / cover;
+      }
+    </style>
+  {% endif %}
+
+</head>

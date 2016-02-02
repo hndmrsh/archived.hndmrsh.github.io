@@ -1,0 +1,38 @@
+<!-- Uses a transparent header that draws on top of the layout's background -->
+<header class="hndmrsh-layout-waterfall mdl-layout__header">
+  <!-- Top row, always visible -->
+  <div class="hndmrsh-title-header mdl-layout__header-row">
+    <!-- Title -->
+    <div class="hndmrsh-title" >
+      <span class="mdl-layout-title">hndmrsh</span>
+    </div>
+
+    <form action="#">
+      <div class="hndmrsh__search mdl-textfield mdl-js-textfield mdl-textfield--expandable">
+        <label class="mdl-button mdl-js-button mdl-button--icon" for="sample6">
+          <i class="material-icons">search</i>
+        </label>
+        <div class="mdl-textfield__expandable-holder">
+          <input class="mdl-textfield__input" type="text" id="sample6">
+          <label class="mdl-textfield__label" for="sample-expandable">Search</label>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <!-- Bottom row, not visible on scroll -->
+  <div class="hndmrsh-navigation-layout mdl-layout__header-row">
+    <!-- Navigation -->
+    <nav class="hndmrsh-navigation mdl-navigation">
+    <!-- Tabs -->
+      <!-- TODO if current page, add class "active" -->
+      <a class="hndmrsh-nav-link mdl-navigation__link" href="/">About</a>
+      {% for page in site.pages %}
+        {% if page.title %}
+          <a class="hndmrsh-nav-link mdl-navigation__link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+        {% endif %}
+      {% endfor %}
+      
+    </nav>
+  </div>
+</header>
