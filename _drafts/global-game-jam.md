@@ -1,8 +1,8 @@
 ---
-layout: post
-title:  "Global Game Jam 2016: a post-mortem"
-date:   2016-02-01 17:55:00 +1300
-categories: games game-dev post-mortems
+layout: 	post
+title:  	"Global Game Jam 2016: a post-mortem"
+date:   	2016-02-01 17:55:00 +1300
+categories:	games game-dev post-mortems
 ---
 
 Notes:
