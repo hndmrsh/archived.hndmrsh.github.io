@@ -25,12 +25,8 @@ body .hndmrsh {
   line-height: 48px;
 }
 
-a.hndmrsh-nav-link.mdl-navigation__link:hover {
+a:hover {
   opacity: 1;
-  text-decoration: none;
-}
-
-a.hndmrsh-card:hover {
   text-decoration: none;
 }
 
@@ -159,6 +155,34 @@ i.hndmrsh-icons:before {
 
 .hndmrsh-post-content.post-content {
   width: 70%;
+}
+
+.hndmrsh__about h1 {
+  font-family: $heading-font-family;
+  font-size: 48pt;
+  margin: 0px auto;
+}
+
+div.hndmrsh-links {
+  text-align: center;
+  margin-top: 16px;
+}
+
+div.hndmrsh-link {
+  padding: 0px;
+}
+
+.hndmrsh-link i {
+  vertical-align: middle;
+}
+
+.hndmrsh-link {
+  padding: 64px;
+}
+
+img.hndmrsh-profile-picture {
+  border-radius: 50%;
+  justify-content: center;
 }
 
 article .hndmrsh-post-content {
