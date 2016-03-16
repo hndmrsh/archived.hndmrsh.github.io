@@ -1,5 +1,5 @@
 $heading-font-family: 'Playball', cursive;
-
+$text-color-secondary: #6E6E6E;
 
 .mdl-grid {
   display: flex !important;
@@ -124,12 +124,21 @@ i.hndmrsh-icons:before {
 
 .hndmrsh-under-construction img {
   text-align: center;
+  color: $text-color-secondary
 }
 
 .hndmrsh-under-construction h2 {
   font-size: 16pt;
   text-align: center;
   font-weight: 400;
+  color: $text-color-secondary
+}
+
+.hndmrsh-under-construction h1 {
+  font-size: 20pt;
+  text-align: center;
+  font-weight: 400;
+  color: $text-color-secondary
 }
 
 .hndmrsh-back-button.mdl-button {
@@ -187,6 +196,10 @@ img.hndmrsh-profile-picture {
 
 article .hndmrsh-post-content {
   margin: 32px auto;
+}
+
+div.hndmrsh-release-date {
+  margin-top: 8px;
 }
 
 .post-header {
