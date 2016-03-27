@@ -1,5 +1,5 @@
 ---
-layout: under_construction
+layout: games
 title: Games
 permalink: /games/
 ---
