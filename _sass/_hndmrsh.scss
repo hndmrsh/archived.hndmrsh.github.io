@@ -205,3 +205,13 @@ div.hndmrsh-release-date {
 .post-header {
   margin-bottom: 0;
 }
+
+.image-wrapper {
+    text-align: center;
+    margin: 32px;
+
+    .image-caption {
+        color: $grey-color;
+        margin-top: $spacing-unit / 3;
+    }
+}
