@@ -1,0 +1,10 @@
+<figure class="image-wrapper" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+  <a href="{{ include.img }}" title="{{ include.title }}" target="_blank" itemprop="contentUrl" data-size="{{ include.width }}x{{ include.height }}">
+      <img src="{{ include.img }}" alt="{{ include.title }}" temprop="thumbnail"/>
+  </a>
+  {% if include.caption %}
+    <figcaption itemprop="caption description">
+      <p class="image-caption">{{ include.caption }}</p>
+    </figcaption>
+  {% endif %}
+</figure>

@@ -21,7 +21,8 @@ jekyll_timeago:
 collections:
   games:
     output: true
-
+  software:
+    output: true
 
 # Build settings
 markdown: kramdown

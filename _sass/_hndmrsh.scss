@@ -1,5 +1,5 @@
 $heading-font-family: 'Playball', cursive;
-
+$text-color-secondary: #6E6E6E;
 
 .mdl-grid {
   display: flex !important;
@@ -25,12 +25,8 @@ body .hndmrsh {
   line-height: 48px;
 }
 
-a.hndmrsh-nav-link.mdl-navigation__link:hover {
+a:hover {
   opacity: 1;
-  text-decoration: none;
-}
-
-a.hndmrsh-card:hover {
   text-decoration: none;
 }
 
@@ -128,12 +124,21 @@ i.hndmrsh-icons:before {
 
 .hndmrsh-under-construction img {
   text-align: center;
+  color: $text-color-secondary
 }
 
 .hndmrsh-under-construction h2 {
   font-size: 16pt;
   text-align: center;
   font-weight: 400;
+  color: $text-color-secondary
+}
+
+.hndmrsh-under-construction h1 {
+  font-size: 20pt;
+  text-align: center;
+  font-weight: 400;
+  color: $text-color-secondary
 }
 
 .hndmrsh-back-button.mdl-button {
@@ -161,10 +166,52 @@ i.hndmrsh-icons:before {
   width: 70%;
 }
 
+.hndmrsh__about h1 {
+  font-family: $heading-font-family;
+  font-size: 48pt;
+  margin: 0px auto;
+}
+
+div.hndmrsh-links {
+  text-align: center;
+  margin-top: 16px;
+}
+
+div.hndmrsh-link {
+  padding: 0px;
+}
+
+.hndmrsh-link i {
+  vertical-align: middle;
+}
+
+.hndmrsh-link {
+  padding: 64px;
+}
+
+img.hndmrsh-profile-picture {
+  border-radius: 50%;
+  justify-content: center;
+}
+
 article .hndmrsh-post-content {
   margin: 32px auto;
 }
 
+div.hndmrsh-release-date {
+  margin-top: 8px;
+}
+
 .post-header {
   margin-bottom: 0;
+}
+
+.image-wrapper {
+    text-align: center;
+    margin: 32px;
+
+    .image-caption {
+        color: $grey-color;
+        margin-top: $spacing-unit / 3;
+    }
 }

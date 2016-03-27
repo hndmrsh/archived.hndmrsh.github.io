@@ -1,5 +1,5 @@
 ---
-layout: under_construction
+layout: software
 title: Software
 permalink: /software/
 ---
