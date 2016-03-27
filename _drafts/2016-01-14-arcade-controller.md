@@ -1,6 +1,6 @@
 ---
 layout:		blogpost
-size:		l
+size:     l
 title: 		"Building an arcade controller using Arduino"
 excerpt:	|
   A build log of the arcade contoller I built using a fake Arduino, off-brand controller parts and love.
@@ -13,6 +13,8 @@ seealso:
   name:		"Blast Off"
   url:		"/games/2-blast-off"
 ---
+
+BLAH.
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris pulvinar leo ac enim laoreet, nec facilisis felis mollis. Mauris id est sed metus viverra faucibus. Donec vitae eros augue. Nulla leo libero, accumsan in nulla vitae, euismod sagittis ex. Maecenas maximus facilisis tellus, sit amet vulputate ligula ultrices a. Sed justo enim, ullamcorper non eros eget, venenatis eleifend enim. Ut molestie urna ac elit tincidunt, sit amet cursus sapien condimentum. Suspendisse elementum tortor in felis euismod, et tincidunt arcu scelerisque. Quisque ac ex quis diam lobortis sollicitudin vel sit amet nulla. Praesent ultrices consequat tellus, nec fermentum ex fermentum et.
 

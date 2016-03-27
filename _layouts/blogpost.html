@@ -51,9 +51,9 @@ layout: default
       </header>
       <div class="hndmrsh-post-content post-content my-gallery mdl-color-text--grey-700" itemscope itemprop="articleBody" itemtype="http://schema.org/ImageGallery">
         {{ content }}
+        {% include disqus.html %}
       </div>
       {% include photoswipe-init.html %}
-      {% include disqus.html %}
     </article>
   </div>
 </div>
