@@ -1,8 +1,12 @@
 ---
-layout: 	post
+layout: 	blogpost
+size:     s
 title:  	"Global Game Jam 2016: a post-mortem"
 date:   	2016-02-01 17:55:00 +1300
-categories:	games game-dev post-mortems
+tags:	games game-dev post-mortems
+excerpt:	|
+  My experiences with GGJ 2016
+colour:		"#0EC5E9"
 ---
 
 Notes:

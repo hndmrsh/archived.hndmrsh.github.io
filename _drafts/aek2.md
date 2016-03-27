@@ -1,8 +1,12 @@
 ---
-layout: 	post
+layout: 	blogpost
+size:     s
 title:  	"Restoring an Apple Extended Keyboard II"
 date:   	2016-02-01 17:55:00 +1300
 categories:	electronics build-logs
+colour:		"#EDB534"
+excerpt:  |
+  A build log of my AEK II
 ---
 
 Costs:
