@@ -2,7 +2,6 @@
 layout: 	blogpost
 size:     s
 title:  	"Building an arcade controller with Arduino"
-date:   	2016-02-03 21:16:00 +1300
 tags:   	games electronics build-logs
 excerpt:	|
   A build log of the arcade contoller I built using a fake Arduino, off-brand controller parts and love.

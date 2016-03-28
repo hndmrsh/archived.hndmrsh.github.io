@@ -206,6 +206,21 @@ div.hndmrsh-disqus {
   margin-top: 32px;
 }
 
+div.hndmrsh-art-date {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-bottom: 16px;
+  margin-right: 16px;
+  width: auto;
+  padding: 0;
+  color: $text-color
+}
+
+.hndmrsh-art-date.hndmrsh-art-date-light {
+  color: #fff
+}
+
 .post-header {
   margin-bottom: 0;
 }
@@ -218,4 +233,11 @@ div.hndmrsh-disqus {
         color: $grey-color;
         margin-top: $spacing-unit / 3;
     }
+}
+
+img.hndmrsh-art-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  visibility: hidden;
 }
