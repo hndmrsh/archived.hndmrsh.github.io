@@ -80,7 +80,7 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
             index;
 
         for (var i = 0; i < numChildNodes; i++) {
-            if(childNodes[i].nodeType !== 1) {
+            if(childNodes[i].nodeType !== 1 || childNodes[i].nodeName !== "FIGURE") {
                 continue;
             }
 
