@@ -1,5 +1,5 @@
 ---
-layout: under_construction
+layout: music
 title: Music
 permalink: /music/
 ---

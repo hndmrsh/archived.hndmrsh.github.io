@@ -241,3 +241,41 @@ img.hndmrsh-art-image {
   left: 50%;
   visibility: hidden;
 }
+
+.mdl-card.hndmrsh-music-card {
+  min-height: 150px;
+  height: 150px;
+}
+
+.hndmrsh-music-card .hndmrsh-music-card-inner {
+  height: inherit;
+  width: inherit;
+}
+
+.hndmrsh-music-card .hndmrsh-album-art {
+  float: left;
+  height: inherit;
+  width: 150px;
+}
+
+.hndmrsh-music-card .hndmrsh-music-details {
+  float: left;
+  position: absolute;
+  left: 150px;
+  right: 0;
+}
+
+.hndmrsh-music-details .mdl-card__title {
+  font-size: 14pt;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 32px;
+  padding-bottom: 0px;
+}
+
+.hndmrsh-music-details .mdl-card__supporting-text {
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 0px;
+  padding-bottom:32px;
+}

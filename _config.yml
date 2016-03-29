@@ -25,6 +25,8 @@ collections:
     output: true
   art:
     output: true
+  music:
+    output: true
 
 # Build settings
 markdown: kramdown
