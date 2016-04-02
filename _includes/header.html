@@ -28,11 +28,11 @@
       <!-- TODO if current page, add class "active" -->
       <a class="hndmrsh-nav-link mdl-navigation__link" href="/">About</a>
       {% for page in site.pages %}
-        {% if page.title %}
-          <a class="hndmrsh-nav-link mdl-navigation__link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+        {% if site[page.collection_name] != empty and page.title %}
+            <a class="hndmrsh-nav-link mdl-navigation__link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
         {% endif %}
       {% endfor %}
-      
+
     </nav>
   </div>
 </header>
