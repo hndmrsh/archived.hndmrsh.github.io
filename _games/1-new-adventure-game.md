@@ -1,9 +1,9 @@
 ---
-layout: 		post
-title:  		"New Adventure Game"
+layout: 		gamespost
+title:  		"Stoppage Time 2: The Resolution and Subsequent Resumption"
 thumb:			"nag.png"
-date:   		2015-11-09 22:31:53 +1300
 release_date: 	2016-01-10 09:00:00 +1300
+colour:     "#EE2FC6"
 platforms:		windows,osx,android
 ---
 Example of game post.

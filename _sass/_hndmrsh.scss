@@ -90,6 +90,10 @@ a:hover {
   height: 256px;
 }
 
+.mdl-card__title.hndmrsh-title-games {
+  height: 196px;
+}
+
 .hndmrsh-card.mdl-card {
   height: 296px;
 }
@@ -310,4 +314,14 @@ img.hndmrsh-art-image {
   top: 50%;
   left: 50%;
   margin: -375px 0 0 -300px;
+}
+
+.post-title.hndmrsh-post-title {
+  margin-left: 8px;
+}
+
+.post-title.hndmrsh-post-title-games {
+  font-size: 36px;
+  font-weight: 200;
+  margin-bottom: 16px;
 }
