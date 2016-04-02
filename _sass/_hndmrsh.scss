@@ -247,7 +247,12 @@ img.hndmrsh-art-image {
   height: 150px;
 }
 
-.hndmrsh-music-card .hndmrsh-music-card-inner {
+.hndmrsh-music-card .hndmrsh-music-card-inner{
+  height: inherit;
+  width: inherit;
+}
+
+.hndmrsh-music-card a {
   height: inherit;
   width: inherit;
 }
@@ -261,6 +266,7 @@ img.hndmrsh-art-image {
 .hndmrsh-music-card .hndmrsh-music-details {
   float: left;
   position: absolute;
+  height: inherit;
   left: 150px;
   right: 0;
 }
@@ -278,4 +284,30 @@ img.hndmrsh-art-image {
   padding-right: 32px;
   padding-top: 0px;
   padding-bottom:32px;
+}
+
+.mdl-card__actions.mdl-card--border {
+    padding: 13px 0;
+}
+
+.mdl-card__actions .hndmrsh-music-details-date {
+  width: auto;
+  height: inherit;
+  padding-left: 32px;
+  float: left;
+}
+
+.mdl-card__actions .hndmrsh-music-details-genre {
+  width: auto;
+  height: inherit;
+  padding-right: 32px;
+  float: right;
+}
+
+.pswp__container iframe {
+  width: 600px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -375px 0 0 -300px;
 }

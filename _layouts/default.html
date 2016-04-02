@@ -15,7 +15,11 @@
 
     </div>
 
-    {% include photoswipe.html %}
+    {% if page.minimal_photoswipe %}
+      {% include photoswipe-minimal.html %}
+    {% else %}
+      {% include photoswipe.html %}
+    {% endif %}
 
   </body>
 

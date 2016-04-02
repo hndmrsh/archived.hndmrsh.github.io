@@ -5,6 +5,8 @@
 
 layout: default
 ---
+<script src="{{ "/static/scripts/photoswipe-init.js" | prepend: site.baseurl }}"></script>
+
 <div class="hndmrsh__grid mdl-grid my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
   {% for art in site.art reversed %}
     <style type="text/css">
