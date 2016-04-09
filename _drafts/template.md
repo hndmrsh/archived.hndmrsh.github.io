@@ -9,7 +9,7 @@ tags: 		games build-logs arduino
 crosspost:
   name:		"Google"
   url:		"http://www.google.com"
-seealso:
+see_also:
   name:		"Blast Off"
   url:		"/games/2-blast-off"
 ---

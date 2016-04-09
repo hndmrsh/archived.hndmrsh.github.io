@@ -21,27 +21,7 @@ layout: default
         <h2 class="mdl-card__title-text">{{ game.title }}</h2>
       </div>
       <div class="mdl-card__supporting-text">
-      {% if game.platforms %}
-          <!-- Platforms -->
-          {% if game.platforms contains "windows" %}
-            <i class="hndmrsh-icons flaticon-windows7" ></i>
-          {% endif %}
-          {% if game.platforms contains "osx" %}
-            <i class="hndmrsh-icons flaticon-mac7" ></i>
-          {% endif %}
-          {% if game.platforms contains "linux" %}
-            <i class="hndmrsh-icons flaticon-logo27" ></i>
-          {% endif %}
-          {% if game.platforms contains "android" %}
-            <i class="hndmrsh-icons flaticon-system1" ></i>
-          {% endif %}
-          {% if game.platforms contains "iphone" %}
-            <i class="hndmrsh-icons flaticon-iphone26" ></i>
-          {% endif %}
-          {% if game.platforms contains "web" %}
-            <i class="hndmrsh-icons flaticon-earth213" ></i>
-          {% endif %}
-      {% endif %}
+      {% include platforms.html platforms=game.platforms %}
       {% if game.release_date %}
         <div class="hndmrsh-release-date">Released {{ game.release_date | date: "%d %B %Y"}}</div>
       {% endif %}
