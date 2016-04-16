@@ -2,6 +2,8 @@
 layout: default
 ---
 
+<script src="{{ "/static/scripts/photoswipe-init.js" | prepend: site.baseurl }}"></script>
+
 <div class="mdl-grid">
   <div class="hndmrsh__post mdl-card mdl-shadow--4dp mdl-cell mdl-cell--6-col">
     <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
@@ -25,7 +27,7 @@ layout: default
               </span>
             </span>
           </a>
-          <h2 class="post-title mdl-card__title-text" itemprop="name headline">{{ page.title }}</h2>
+          <h2 class="hndmrsh-post-title post-title mdl-card__title-text" itemprop="name headline">{{ page.title }}</h2>
         </div>
         <div class="mdl-card__supporting-text post-meta hndmrsh-post-meta">
           <span class="hndmrsh-post-meta-left">
@@ -36,8 +38,8 @@ layout: default
             {% if page.crosspost %}
               <div>Originally posted at: <a href="{{ page.crosspost.url }}">{{ page.crosspost.name }}</a></div>
             {% endif %}
-            {% if page.seealso %}
-              <div>See also: <a href="{{ page.seealso.url }}">{{ page.seealso.name }}</a></div>
+            {% if page.see_also %}
+              <div>See also: <a href="{{ page.see_also.url }}">{{ page.see_also.name }}</a></div>
             {% endif %}
           </span>
           <a class="hndmrsh-share-button mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" href="#" title="Share" role="button">

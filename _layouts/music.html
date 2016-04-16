@@ -1,0 +1,50 @@
+---
+# art.html
+# This file defines the layout for the Art page. Each card
+# opens the image in the gallery viewer, with no pagination.
+
+layout: default
+---
+<script src="{{ "/static/scripts/photoswipe-music-init.js" | prepend: site.baseurl }}"></script>
+
+<div class="hndmrsh__grid mdl-grid my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+  {% for m in site.music reversed %}
+    {% if m.album_art %}{% assign cover = m.album_art %}{% else %}{% assign cover = "no-cover.jpg" %}{% endif %}
+    <style type="text/css">
+      .{{ m.title | slugify }}.hndmrsh-album-art {
+        background:
+          url('/static/album-covers/{{ cover }}') center / cover;
+      }
+    </style>
+    {% if m.embed_type == "soundcloud" %}
+      {% capture code %}
+        {% include soundcloud_uriencode.html playlist=m.embed_data %}
+      {% endcapture %}
+    {% endif %}
+    <figure class="hndmrsh-music-card mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col" itemprop="associatedMedia" itemscope itemtype="http://schema.org/MediaObject">
+      <a data-html="{{ code }}" href="#" >
+        <div class="hndmrsh-music-card-inner">
+          <div class="{{ m.title | slugify }} hndmrsh-album-art"></div>
+          <div class="hndmrsh-music-details">
+            <div class="mdl-card__title">
+              {{ m.title }}
+            </div>
+            <div class="mdl-card__supporting-text">
+              {% if m.track_count == 1 %}{% assign track_suffix = "track" %}{% else %}{% assign track_suffix = "tracks" %}{% endif %}
+              {{ m.track_count }} {{ track_suffix }}
+            </div>
+            <div class="mdl-card__actions mdl-card--border">
+              <div class="mdl-card__supporting-text hndmrsh-music-details-date">
+                Released {{ m.date | date: "%d %B %Y" }}
+              </div>
+              <div class="mdl-card__supporting-text hndmrsh-music-details-genre">
+                {{ m.genre }}
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+    </figure>
+  {% endfor %}
+</div>
+{% include photoswipe-init.html %}

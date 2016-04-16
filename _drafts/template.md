@@ -9,7 +9,7 @@ tags: 		games build-logs arduino
 crosspost:
   name:		"Google"
   url:		"http://www.google.com"
-seealso:
+see_also:
   name:		"Blast Off"
   url:		"/games/2-blast-off"
 ---
@@ -21,7 +21,7 @@ Maecenas lacus tellus, efficitur sed cursus rhoncus, vestibulum gravida eros. Pr
 Curabitur placerat pretium egestas. Mauris pulvinar felis non metus sodales convallis. Proin vel sem at libero convallis tincidunt. Aliquam ullamcorper nulla nisi, et iaculis eros vehicula non. Curabitur pellentesque, lectus sed condimentum facilisis, risus tellus congue diam, et scelerisque risus ante ut urna. Fusce id sapien et lectus ullamcorper consequat in et orci. Fusce in dapibus lorem. Quisque vel auctor nisi, vel facilisis lectus. Etiam varius nulla sit amet risus ultricies hendrerit. Nam viverra neque at nisi consectetur porttitor. Aliquam pharetra felis nec ex volutpat, in congue nisi ultricies. Cras eget lobortis enim.
 
 {% include image.html
-    img="/static/blog-post-images/arcade-controller.jpg"
+    img="/static/blog-post-images/arcade/arcade-controller.jpg"
     title="The controller"
     caption="The controller I built"
     width="3264"
@@ -30,7 +30,7 @@ Curabitur placerat pretium egestas. Mauris pulvinar felis non metus sodales conv
 Nam nulla nulla, blandit ut nisi quis, bibendum commodo urna. Etiam nec ullamcorper nisl. In posuere diam quis enim consequat commodo. Cras a lectus eros. Aliquam erat volutpat. Mauris cursus, magna eu rutrum vestibulum, enim velit molestie metus, eu semper ex mi et neque. Morbi scelerisque odio et neque efficitur, in lobortis dolor aliquet. Fusce vitae purus sit amet nibh dictum gravida sodales quis enim. Ut iaculis rutrum turpis vitae egestas. Proin quam urna, viverra quis facilisis quis, dapibus gravida sapien. Praesent ornare, mauris ac mattis rhoncus, urna leo pulvinar ligula, sit amet venenatis enim mauris et turpis. Nulla rutrum risus consequat, feugiat ipsum at, convallis quam.
 
 {% include image.html
-    img="/static/blog-post-images/game-development.png"
+    img="/static/blog-post-images/arcade/game-development.png"
     title="Code samples"
     caption="Some code I wrote"
     width="1204"

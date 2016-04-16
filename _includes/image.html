@@ -1,4 +1,9 @@
-<figure class="image-wrapper" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+{% if include.hidden == "true" %}
+  {% assign classes="image-wrapper hidden" %}
+{% else %}
+  {% assign classes="image-wrapper" %}
+{% endif %}
+<figure class="{{ classes }}" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
   <a href="{{ include.img }}" title="{{ include.title }}" target="_blank" itemprop="contentUrl" data-size="{{ include.width }}x{{ include.height }}">
       <img src="{{ include.img }}" alt="{{ include.title }}" temprop="thumbnail"/>
   </a>

@@ -1,0 +1,21 @@
+{% if include.platforms %}
+    <!-- Platforms -->
+    {% if include.platforms contains "windows" %}
+      <i class="hndmrsh-icons flaticon-windows7" ></i>
+    {% endif %}
+    {% if include.platforms contains "osx" %}
+      <i class="hndmrsh-icons flaticon-mac7" ></i>
+    {% endif %}
+    {% if include.platforms contains "linux" %}
+      <i class="hndmrsh-icons flaticon-logo27" ></i>
+    {% endif %}
+    {% if include.platforms contains "android" %}
+      <i class="hndmrsh-icons flaticon-system1" ></i>
+    {% endif %}
+    {% if include.platforms contains "iphone" %}
+      <i class="hndmrsh-icons flaticon-iphone26" ></i>
+    {% endif %}
+    {% if include.platforms contains "web" %}
+      <i class="hndmrsh-icons flaticon-earth213" ></i>
+    {% endif %}
+{% endif %}

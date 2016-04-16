@@ -1,5 +1,6 @@
 ---
-layout: under_construction
+layout: art
 title: Art
 permalink: /art/
+collection_name: art
 ---

@@ -90,6 +90,10 @@ a:hover {
   height: 256px;
 }
 
+.mdl-card__title.hndmrsh-title-games {
+  height: 196px;
+}
+
 .hndmrsh-card.mdl-card {
   height: 296px;
 }
@@ -206,6 +210,21 @@ div.hndmrsh-disqus {
   margin-top: 32px;
 }
 
+div.hndmrsh-art-date {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-bottom: 16px;
+  margin-right: 16px;
+  width: auto;
+  padding: 0;
+  color: $text-color
+}
+
+.hndmrsh-art-date.hndmrsh-art-date-light {
+  color: #fff
+}
+
 .post-header {
   margin-bottom: 0;
 }
@@ -218,4 +237,109 @@ div.hndmrsh-disqus {
         color: $grey-color;
         margin-top: $spacing-unit / 3;
     }
+}
+
+img.hndmrsh-art-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  visibility: hidden;
+}
+
+.mdl-card.hndmrsh-music-card {
+  min-height: 150px;
+  height: 150px;
+}
+
+.hndmrsh-music-card .hndmrsh-music-card-inner{
+  height: inherit;
+  width: inherit;
+}
+
+.hndmrsh-music-card a {
+  height: inherit;
+  width: inherit;
+}
+
+.hndmrsh-music-card .hndmrsh-album-art {
+  float: left;
+  height: inherit;
+  width: 150px;
+}
+
+.hndmrsh-music-card .hndmrsh-music-details {
+  float: left;
+  position: absolute;
+  height: inherit;
+  left: 150px;
+  right: 0;
+}
+
+.hndmrsh-music-details .mdl-card__title {
+  font-size: 14pt;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 32px;
+  padding-bottom: 0px;
+}
+
+.hndmrsh-music-details .mdl-card__supporting-text {
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 0px;
+  padding-bottom:32px;
+}
+
+.mdl-card__actions.mdl-card--border {
+    padding: 13px 0;
+}
+
+.mdl-card__actions .hndmrsh-music-details-date {
+  width: auto;
+  height: inherit;
+  padding-left: 32px;
+  float: left;
+}
+
+.mdl-card__actions .hndmrsh-music-details-genre {
+  width: auto;
+  height: inherit;
+  padding-right: 32px;
+  float: right;
+}
+
+.pswp__container iframe {
+  width: 600px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -375px 0 0 -300px;
+}
+
+.post-title.hndmrsh-post-title {
+  margin-left: 8px;
+}
+
+.post-title.hndmrsh-post-title-games {
+  font-size: 36px;
+  font-weight: 200;
+  margin-bottom: 16px;
+}
+
+.hndmrsh-post-content .hndmrsh-available-platforms {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.hndmrsh-available-platforms h4 {
+  margin: 0;
+}
+
+.hndmrsh-game-sidebar.mdl-cell {
+  padding-right: 32px;
+  text-align: center;
+}
+
+.hndmrsh-game-sidebar img {
+  margin-top: 32px;
 }

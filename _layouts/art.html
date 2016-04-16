@@ -1,0 +1,33 @@
+---
+# art.html
+# This file defines the layout for the Art page. Each card
+# opens the image in the gallery viewer, with no pagination.
+
+layout: default
+---
+<script src="{{ "/static/scripts/photoswipe-init.js" | prepend: site.baseurl }}"></script>
+
+<div class="hndmrsh__grid mdl-grid my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+  {% for art in site.art reversed %}
+    <style type="text/css">
+      .{{ art.image | slugify }}.hndmrsh-card {
+        background:
+          url('/static/art/{{ art.image }}') center / cover;
+      }
+    </style>
+    <figure class="{{ art.image | slugify }} image-wrapper hndmrsh-card mdl-cell mdl-cell--4-col mdl-card mdl-shadow--2dp" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+      <a href="/static/art/{{ art.image }}" data-size="{{ art.width }}x{{ art.height }}">
+        <img class="hndmrsh-art-image" temprop="thumbnail"/>
+        <div class="mdl-card__supporting-text hndmrsh-art-date{% if art.light_text == true %} hndmrsh-art-date-light {% endif %}">
+          {{ art.date || date: "%d %B %Y"}}
+        </div>
+      </a>
+      {% if art.description %}
+        <figcaption class="hidden" itemprop="caption description">
+          <p class="image-caption">{{ art.description }}</p>
+        </figcaption>
+      {% endif %}
+    </figure>
+  {% endfor %}
+</div>
+{% include photoswipe-init.html %}
