@@ -1,10 +1,11 @@
 ---
 layout: 		softpost
 title:  		"trapped."
+thumb:      "trapped-cover.png"
 cover:      "trapped-cover.png"
 release_date: 	2012-04-30
 genres: [action,sidescroller]
-colour:     "#EE2FC6"
+colour:     "#4EED2E"
 platforms:		[windows,osx,linux]
 created_for:
   name:		"Ludum Dare #23"
@@ -13,12 +14,12 @@ crosspost:
   name:		"samuelhindmarsh.wordpress.com"
   url:		"https://samuelhindmarsh.wordpress.com/2012/04/30/trapped/"
 screenshots:
-  - url: "1.PNG"
-    width: 513
-    height: 483
   - url: "2.PNG"
     width: 512
     height: 486
+  - url: "1.PNG"
+    width: 513
+    height: 483
   - url: "3.PNG"
     width: 511
     height: 483

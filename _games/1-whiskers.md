@@ -1,10 +1,11 @@
 ---
 layout: 		softpost
 title:  		"Whiskers of the East"
+thumb:      "whiskers-cover.jpg"
 cover:      "whiskers-cover.jpg"
 release_date: 	2011-07-01
 genres: [action]
-colour:     "#EE2FC6"
+colour:     "#BE7846"
 platforms:		[windows]
 created_for:
   name:		"COMP 348 at Victoria University of Wellington"
