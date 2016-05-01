@@ -1,7 +1,7 @@
 ---
 layout: 		softpost
 title:  		"Whiskers of the East"
-thumb:      "whiskers-cover.jpg"
+thumb:      "whiskers-thumb.PNG"
 cover:      "whiskers-cover.jpg"
 release_date: 	2011-07-01
 genres: [action]

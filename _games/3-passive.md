@@ -1,7 +1,7 @@
 ---
 layout: 		softpost
 title:  		"Passive"
-thumb:      "passive-cover.PNG"
+thumb:      "passive-thumb.PNG"
 cover:      "passive-cover.PNG"
 release_date: 	2012-08-28
 genres: [puzzle,stealth,top-down]

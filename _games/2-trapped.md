@@ -1,7 +1,7 @@
 ---
 layout: 		softpost
 title:  		"trapped."
-thumb:      "trapped-cover.png"
+thumb:      "trapped-thumb.PNG"
 cover:      "trapped-cover.png"
 release_date: 	2012-04-30
 genres: [action,sidescroller]
