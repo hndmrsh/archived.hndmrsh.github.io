@@ -1,9 +1,9 @@
 ---
 layout:		blogpost
-size:     s
+size:     l
 title: 		"Ludum Dare #23: A journal"
 excerpt:	|
-  A cross-post of my journal kept during Ludum Dare #23, and the development of _trapped._
+  A journal kept during the development of trapped. for Ludum Dare #23.
 colour:   "#33B506"
 tags: 		game-dev post-mortem
 crosspost:
