@@ -3,13 +3,19 @@ layout: 		softpost
 title:  		"Stoppage Time 2: The Resolution and Subsequent Resumption"
 thumb:			"nag.png"
 cover:      "test-cover.jpg"
-release_date: 	2016-01-10 09:00:00 +1300
+release_date: 	2016-01-10
 genres: [tactical,sports,adventure]
 colour:     "#EE2FC6"
 platforms:		[windows,osx,android]
 created_for:
   name:		"Ludum Dare 26"
   url:		"http://ludumdare.com/compo/author/noddy2006/"
+source_code:
+  name:		"GitHub"
+  url:		"https://github.com/hndmrsh/repo"
+see_also:
+  name:		"Ludum Dare post-mortem"
+  url:		"/blog/2015-02-01-ld-post-mortem"
 screenshots:
   - url: "1.jpg"
     width: 1920

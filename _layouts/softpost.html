@@ -45,7 +45,7 @@ layout: default
             {% if page.source_code %}
             <div>Source code: <a href="{{ page.source_code.url }}">{{ page.source_code.name }}</a></div>
             {% endif %}
-            {% if page.seealso %}
+            {% if page.see_also %}
               <div>See also: <a href="{{ page.see_also.url }}">{{ page.see_also.name }}</a></div>
             {% endif %}
           </span>
@@ -65,6 +65,9 @@ layout: default
               <h4>Available for:</h4>
               {% include platforms.html platforms=page.platforms %}
             </div>
+            <p>
+              <em>Download links are currently unavailable. They will be available shortly.</em>
+            </p>
             {{ content }}
           </div>
         </div>

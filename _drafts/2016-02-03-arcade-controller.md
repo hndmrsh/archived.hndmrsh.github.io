@@ -22,5 +22,5 @@ Hooked up a joystick, that works... but MAME uses DirectInput! Change from winap
 Worked! Played Pac-Man. Tried winapi32 again, but super laggy. Using the sendkeys code
 
 Switched to using internal pull-up resistors - woohoo, now I don't need to worry about supplying 5V to 26 different input pins!
-Wired up all player 1 controls using header pins. 
+Wired up all player 1 controls using header pins.
 Lots of play testing!
