@@ -24,11 +24,9 @@ screenshots:
     width: 1023
     height: 767
 ---
-This was my first attempt at developing a 3D game on my own. It is also my first proper game in Unity. What's more, it was my first attempt at proper 3D modelling with Blender. (I've used both Unity and Blender before, but in a very limited capacity). For this reason, I am super proud of what I managed to achieve in a short amount of time.
+Morning is the title of my third entry into Ludum Dare, the worldwide game jam. This was a solo entry, targeting the 72-hour Jam. It is a 3D, first-person point-and-click adventure game (in the vein of Myst, for example). Given the time constraints, there’s not a lot of content in the game – the aim of the game at the moment is to guide the character through his morning routine so he can go to work.
 
-Unfortunately, the scope of this project was far too great for a 72-hour jam, and I ran out of time to develop much content. As it stands, the entire game can be completed in a couple of minutes - there's lots of text in the game for various events, so I'd recommend taking 10 minutes to explore all the objects in the room, especially in the various different game states.
-
-I had a lot of great ideas for what I wanted this game to be, and I'm still keen on following through on them - I'll continue working on this game in the near future and turn it into a proper post-LD game.
+This game is my first solo attempt at developing a 3D game, and I’m rather proud of how much I was able to achieve given my novice status. Morning was developed in Unity, scripted in UnityScript with MonoDevelop, modelled in Blender, and audio’d in sfxr and Audacity.
 
 _2016 update:_ I still have the plans for this game in the back of my mind, and my aim is to eventually release my original vision for this game, time and enthusiasm allowing.
 
