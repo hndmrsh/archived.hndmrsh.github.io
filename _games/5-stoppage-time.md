@@ -14,16 +14,13 @@ source_code:
   name:		"GitHub"
   url:		"https://github.com/hndmrsh/Stoppage-Time"
 screenshots:
-  - url: "1.PNG"
-    width: 1036
-    height: 637
-  - url: "2.PNG"
+  - url: "4.PNG"
     width: 1036
     height: 637
   - url: "3.PNG"
     width: 1036
     height: 637
-  - url: "4.PNG"
+  - url: "2.PNG"
     width: 1036
     height: 637
 ---

@@ -14,9 +14,6 @@ source_code:
   name:		"GitHub"
   url:		"https://github.com/hndmrsh/1gam-2015-01-blastoff"
 screenshots:
-  - url: "1.PNG"
-    width: 506
-    height: 900
   - url: "2.PNG"
     width: 506
     height: 900
