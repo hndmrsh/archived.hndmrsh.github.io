@@ -21,4 +21,6 @@ Got most of the code working pretty easily (but why are bytes being sent in the 
 Hooked up a joystick, that works... but MAME uses DirectInput! Change from winapi to sendkey... but MAME uses DI in raw mode! Compile MAME to use normal DI instead  of raw mode (used .
 Worked! Played Pac-Man. Tried winapi32 again, but super laggy. Using the sendkeys code
 
-Switched to using internal pull-up resistors, wired up all player 1 controls using header pins. Lots of play testing!
+Switched to using internal pull-up resistors - woohoo, now I don't need to worry about supplying 5V to 26 different input pins!
+Wired up all player 1 controls using header pins.
+Lots of play testing!
