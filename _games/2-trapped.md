@@ -15,7 +15,7 @@ crosspost:
   url:		"https://samuelhindmarsh.wordpress.com/2012/04/30/trapped/"
 see_also:
   name:   "Ludum Dare #23: A post-mortem"
-  url:    "/blog/2012/05/17/ld-post-mortem.html"
+  url:    "/2012/05/17/ld-post-mortem.html"
 screenshots:
   - url: "2.PNG"
     width: 512
