@@ -35,7 +35,7 @@ layout: default
         </div>
         <div class="mdl-card__supporting-text post-meta hndmrsh-post-meta">
           <span class="hndmrsh-post-meta-left">
-            <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">Released {{ page.release_date | date: "%d %B %Y"}}</time>
+            <time datetime="{{ page.release_date | date_to_xmlschema }}" itemprop="datePublished">Released {{ page.release_date | date: "%d %B %Y"}}</time>
             {% if page.genres.size > 0 %}
               <div>Genres: {% assign first = true %}{% for genre in page.genres %}{% if first == false %}, {% endif %}<a href="#">{{ genre }}</a>{% assign first = false %}{% endfor %}</div>
             {% endif %}
