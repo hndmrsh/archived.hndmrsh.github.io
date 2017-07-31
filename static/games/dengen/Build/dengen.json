@@ -1,0 +1,9 @@
+{
+"TOTAL_MEMORY": 268435456,
+"dataUrl": "dengen.data.unityweb",
+"asmCodeUrl": "dengen.asm.code.unityweb",
+"asmMemoryUrl": "dengen.asm.memory.unityweb",
+"asmFrameworkUrl": "dengen.asm.framework.unityweb",
+"splashScreenStyle": "Light",
+"backgroundColor": "#E7E3CA"
+}
