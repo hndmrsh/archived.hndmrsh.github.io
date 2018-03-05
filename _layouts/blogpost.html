@@ -31,7 +31,7 @@ layout: default
         </div>
         <div class="mdl-card__supporting-text post-meta hndmrsh-post-meta">
           <span class="hndmrsh-post-meta-left">
-            <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | timeago }}</time>
+            <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date }}</time>
             {% if page.tags.size > 0 %}
               <div>Filed under: {% assign first = true %}{% for tag in page.tags %}{% if first == false %}, {% endif %}<a href="#">{{ tag }}</a>{% assign first = false %}{% endfor %}</div>
             {% endif %}

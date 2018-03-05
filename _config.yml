@@ -14,9 +14,9 @@ url: "http://hndmrsh.github.io" # the base hostname & protocol for your site
 twitter_username: hndmrsh
 github_username:  hndmrsh
 
-jekyll_timeago:
-  depth: 1 # Level of detail
-  today: "Today"
+#jekyll_timeago:
+#  depth: 1 # Level of detail
+#  today: "Today"
 
 collections:
   games:
